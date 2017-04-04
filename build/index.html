@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Ahcaballo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <div class="menu__movil"><a class="menu__movil__main" href="index.html"><img id="imageMenu" src="./images/logoahcaballo.png" alt="logo"/></a><i class="fa fa-bars fa-2x iconMenu" id="iconMenu"></i></div>
+      <ul class="menu" id="mymenu"> 
+        <li class="menu__item active" data-menuanchor="inicio"><a class="menu__item__link" href="#inicio">inicio </a></li>
+        <li class="menu__item" data-menuanchor="eventos"><a class="menu__item__link" href="#eventos">eventos</a></li>
+        <li class="menu__item" data-menuanchor="lugar "><a class="menu__item__link" href="#lugar">lugar </a></li>
+        <li class="menu__item" data-menuanchor="invita"><a class="menu__item__link" href="#invita">invita</a></li>
+        <li class="menu__item" data-menuanchor="contacto"><a class="menu__item__link" href="#contacto">contacto</a></li>
+      </ul>
+    </nav>
+    <div id="contenedor">
+      <div class="section section-1">
+        <div class="text-content">
+          <h2>Feria Expo agrohuila 2017</h2><span>29 de abril al 1 de mayo</span>
+        </div>
+      </div>
+      <div class="section section-2">
+        <div class="slide slide-1">
+          <h2>XIV FERIA DE EXPOSICIóN </h2><span>EQUINA GRADO “A” DE NEIVA</span>
+        </div>
+        <div class="slide slide-2">
+          <h2>III FERIA DE EXPOSICION BOVINA</h2><span> ASOCEBU BRAHMAN Y GRYL GRADO “B”</span>
+        </div>
+        <div class="slide slide-3">
+          <h2>III ENCUENTRO SURCOLOMBIANO </h2><span>DE GANADERIAS DE ALTO ESTATUS SANITARIO</span>
+        </div>
+        <div class="slide slide-4">
+          <h2>LV FERIA AGROINDUSTRIAL, ARTESANAL, </h2><span> AGRICOLA Y ESPECIES MENORES Y CONCURSO CANINO</span>
+        </div>
+      </div>
+      <div class="section section-3">
+        <div class="lugar__container"> 
+          <div class="lugar__info">
+            <h2>Información </h2>
+            <div class="item__location"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Coliseo de ferias ceagrodex </span></div>
+            <div class="item__location"><i class="fa fa-map" aria-hidden="true"></i><span>Carrera 5 No. 81 sur 45 Kilometro 12 vía sur </span></div>
+            <div class="item__location"><i class="fa fa-map" aria-hidden="true"></i><span>ahcaballo cra 13 No 9 -11</span></div>
+            <div class="item__location"><i class="fa fa-phone" aria-hidden="true"></i><span>(8) 712732 - 716684</span></div>
+          </div>
+          <div class="lugar__maps"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.946237331798!2d-75.29478270691142!3d2.831800237315454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6d77e0d637db%3A0x6e6ce2673dc9876b!2sCeagrodex+Del+HUILA!5e0!3m2!1ses!2sco!4v1490796057794" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="section section-4">
+        <h2>invitan </h2>
+        <div class="invitan__logos">
+          <div class="items__logos">
+            <figure> <img src="./images/fedequinas.png" alt="logo"/></figure><span>fedequinas </span>
+          </div>
+          <div class="items__logos">
+            <figure> <img src="./images/gobernacion.png" alt="logo"/></figure><span>gobernación del huila</span>
+          </div>
+          <div class="items__logos">
+            <figure> <img src="./images/alcaldia.png" alt="logo"/></figure><span>alcaldía de neiva                       </span>
+          </div>
+          <div class="items__logos">
+            <figure> <img src="./images/logoahcaballocolor.png" alt="logo"/></figure><span>ahcaballo </span>
+          </div>
+          <div class="items__logos">
+            <figure> <img src="./images/logo_ceagrodex.png" alt="logo"/></figure><span>ceagrodex</span>
+          </div>
+          <div class="items__logos">
+            <figure> <img src="./images/expoagrohuila.png" alt="logo"/></figure><span>expo agrohuila</span>
+          </div>
+          <div class="items__logos">
+            <figure> <img src="./images/ganaderos.png" alt="logo"/></figure><span>cómite de ganaderos del huila</span>
+          </div>
+        </div>
+      </div>
+      <div class="section section-5">
+        <div class="formulario">
+          <div class="form__containers">
+            <form>
+              <div class="div__info__container">
+                <div class="div__info__items">
+                  <label>Nombre Completo</label>
+                  <input type="text" placeholder="Juan Lizcano" autofocus="autofocus" required="required" id="nombreCompleto"/>
+                </div>
+                <div class="div__info__items"> 
+                  <label>Correo Electronico</label>
+                  <input type="text" placeholder="Juan@Example.com" required="required" id="email"/>
+                </div>
+                <div class="div__info__items"> 
+                  <label>Celular </label>
+                  <input type="text" placeholder="(300)455 5555" maxlength="10" id="celular"/>
+                </div>
+                <div class="div__info__items">
+                  <label>Mensaje</label>
+                  <textarea name="" cols="30" rows="10" placeholder="Your message..." id="mensaje"></textarea>
+                </div>
+              </div>
+              <div class="div__info__send">
+                <button id="buttoncoursesSend">enviar </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="social__media"><span>diseñado y desarrollado por <a href="http://bit.ly/2eLx9yd" target="_blank">mep's</a></span></div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="./js/scrolloverflow.min.js"></script>
+    <script>
+      var c = window.matchMedia('(min-width: 768px)');
+      function mediaQ() {
+      if(c.matches){
+      $('#contenedor').fullpage({
+      navigation: true,
+      anchors: ['inicio','eventos', 'lugar', 'invita','contacto'],
+      menu: '#mymenu',
+      css3: true,
+      slidesNavigation: true,
+      scrollingSpeed: 1000,
+      autoScrolling: true,
+      });
+      
+      }else{
+      
+      $('#contenedor').fullpage({
+      //- navigation: true,
+      anchors: ['inicio','eventos', 'lugar', 'invita','contacto'],
+      menu: '#mymenu',
+      css3: true,
+      slidesNavigation: true,
+      scrollingSpeed: 1000,
+      autoScrolling: false,
+      });
+      }
+      }         
+      mediaQ();
+      //- if(c){
+      
+      
+      //- }else {
+      //- $('#contenedor').fullpage({
+      //- //- navigation: true,
+      //- anchors: ['eventos', 'lugar', 'invita','contacto'],
+      //- menu: '#mymenu',
+      //- css3: true,
+      //- slidesNavigation: true,
+      //- scrollingSpeed: 1000,
+      //- autoScrolling: true,
+      //- fitToSection:false,
+      //- showActiveTooltip: true
+      //- });
+      //- }
+    </script>
+  </body>
+</html>

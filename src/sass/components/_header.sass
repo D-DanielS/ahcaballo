@@ -1,0 +1,395 @@
+@mixin before($color: rgba(0,0,0,.4) )
+    content: ''
+    position: absolute
+    display: block
+    background: $color 
+    top: 0
+    bottom: 0
+    left: 0
+    height: 100% 
+    width: 100% 
+
+%helper
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    >h2,
+    >span 
+        color: white 
+        position: relative
+        text-align: center
+       
+
+
+// body
+// rgba(0,0,0,.4)
+//     overflow: hidden
+//     height: 100%
+    
+.section
+   
+    background-size: cover
+    background-repeat: no-repeat
+   
+    transform: translate3d(0,0,0)
+    // &:before
+    //     content: ''
+    //     position: absolute
+    //     display: block
+    //     background: rgba(0,0,0,.4)
+    //     top: 0
+    //     bottom: 0
+    //     left: 0
+    //     height: 100% 
+    //     width: 100% 
+
+    &-1
+        background-image: url('../images/header.png')
+        background-position: 70% center
+        &:before 
+            @include before(rgba(0,0,0,.4))
+        >.fp-tableCell
+            >.text-content
+                width: 90%
+                margin: 0 auto
+                text-align: center
+                >h2
+                    color: white 
+                    position: relative
+                    font-family: $font-title
+                    text-transform: uppercase
+                    letter-spacing: 3px
+                    font-size: responsive 25px 80px
+                    text-shadow: -1px 1px 8px rgba(0,0,0,.8)
+                >span 
+                    position: relative
+                    margin-top: 1em
+                    text-align: center
+                    text-transform: uppercase
+                    color: $blanco
+                    font-family: $font 
+                    font-size: responsive 14px 28px
+                    letter-spacing: 1px
+                    width: 100px
+                    height: auto
+
+    
+    &-2 
+        // background-image: url('../images/event.png')
+        background-position: 70% center
+
+        .slide
+            background-size: cover
+            background-repeat: no-repeat
+            transform: translate3d(0,0,0)
+            padding: 1em
+            &:before
+                @include before(rgba(0,0,0,.4))
+
+
+            &-1
+                background-image: url('../images/event2.png')
+                background-position: center center
+                &:before
+                    background: rgba(0,0,0,.5)
+                >.fp-tableCell 
+                    @extend %helper
+                    >h2
+                        font-family: $font-title
+                        text-transform: uppercase
+                        letter-spacing: 3px
+                        font-size: responsive 16px 60px
+                    >span 
+                        font-family: $font
+                        text-transform: uppercase
+                        letter-spacing: 1px
+                        font-size: responsive 15px 30px
+
+            &-2
+                background-image: url('../images/event.jpg')
+                background-position: center center
+                &:before
+                    background: rgba(0,0,0,.6)
+
+                >.fp-tableCell 
+                    @extend %helper
+                    >h2
+                        font-family: $font-title
+                        text-transform: uppercase
+                        letter-spacing: 3px
+                        font-size: responsive 16px 60px
+                    >span 
+                        font-family: $font
+                        text-transform: uppercase
+                        letter-spacing: 1px
+                        font-size: responsive 14px 30px
+            &-3
+                background-image: url('../images/event3.png')
+                background-position: center center
+                &:before
+                    background: rgba(0,0,0,.4)
+                >.fp-tableCell 
+                    @extend %helper
+                    >h2
+                        font-family: $font-title
+                        text-transform: uppercase
+                        letter-spacing: 3px
+                        font-size: responsive 16px 60px
+                       
+                    >span 
+                        font-family: $font
+                        text-transform: uppercase
+                        letter-spacing: 1px
+                        font-size: responsive 13px 30px
+
+
+
+            &-4
+                background-image: url('../images/event4.png')
+                background-position: center center
+                &:before
+                    background: rgba(0,0,0,.4)                
+                >.fp-tableCell 
+                    @extend %helper
+
+                    >h2
+                        font-family: $font-title
+                        text-transform: uppercase
+                        letter-spacing: 3px
+                        font-size: responsive 15px 60px
+                    >span 
+                        font-family: $font
+                        text-transform: uppercase
+                        letter-spacing: 1px
+                        font-size: responsive 13px 30px
+
+
+
+    &-3
+        background-image: url('../images/ceagrodexx.jpg')
+        background-position: 70% center
+
+        &:before 
+            @include before(rgba(0,0,0,.6))
+            background-image: url('../images/particles.png')
+            background-size: cover
+
+        .lugar__container 
+            @include mediaMin(1024)
+                display: flex
+                align-items: flex-start
+                justify-content: center
+                width: 100%
+                
+                
+            .lugar__info
+                background: $blanco
+                position: relative
+                margin-top: 2.5em
+                width: 90%
+                margin-left: auto 
+                margin-right: auto
+                border-radius: 5px 
+                padding-bottom: 1em
+                width: 300px
+                @include mediaMin(1024)
+                    margin-left: 0
+                    margin-right: 0
+                    width: 40%
+                    margin-right: 3em
+                    white-space: 
+                >h2
+                    text-align: center
+                    padding: .5em 0
+                    
+
+                .item__location
+                    padding: .5em 1em
+                    >i 
+                        font-size: 1.5em
+                    >span
+                        padding-left: .5em
+            .lugar__maps 
+                display: none
+                @include mediaMin(768)
+                    position: relative
+                    display: block
+                @include mediaMin(1024)
+                    width: 40%
+                    
+                    >iframe
+                        margin: 1em auto
+                        display: block
+
+                
+    &-4
+        background-image: url('../images/ice.png')
+        background-position: 70% center
+        &:before 
+            @include before(rgba(0,0,0,.85))
+        .fp-tableCell
+            >h2
+                margin-top: 1em
+                margin-bottom: 1em
+                text-align: center
+                text-transform: uppercase
+                font-family: $font-title
+                color: $blanco 
+                position: relative
+
+                letter-spacing: 3px
+                font-size: responsive 25px 50px
+            .invitan__logos 
+                position: relative
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+
+                .items__logos
+                    
+                    // width: 25%
+                    display: flex
+                    flex-direction: column 
+                    align-items: stretch
+                    margin: .8em
+                    @include mediaMin(640)
+                        margin: 2em
+                    @include mediaMin(768)
+                        margin: 2.6em
+
+                    >figure 
+                        overflow: hidden
+                        background: $blanco 
+                        border-radius: 50%  
+                        width: 60px
+                        height: 60px
+                        text-align: center
+                        padding-top: .5em
+                        margin: 0 auto
+                        @include mediaMin(640)
+                            width: 80px
+                            height: 80px
+                        @include mediaMin(768)
+                            padding-top: 1em
+                            width: 110px
+                            height: 110px
+                        >img 
+                            width: 100%
+                            max-width: 70%
+                    >span 
+                        margin-top: 1em
+                        text-align: center
+                        text-transform: uppercase
+                        color: $blanco
+                        font-family: $font 
+                        font-size: responsive 10px 14px
+                        width: 100px
+                        height: auto
+                            
+
+    &-5
+        background-image: url('../images/ice.png')
+        background-position: 70% center
+
+        &:before 
+            @include before(rgba(0,0,0,.85))
+
+
+        .fp-tableCell
+            
+
+            .formulario
+                position: relative
+                padding: 1em
+                @include mediaMin(640)
+                    width: 80% 
+                    margin: 0 auto
+                @include mediaMin(769)
+                    width: 75%
+                @include mediaMin(1024)
+                    width: 60%
+                @include mediaMin(1300)
+                    width: 40%
+                .form__containers
+                    >form 
+                        .div__info__container
+
+                            .div__info__items
+                                display: flex
+                                flex-direction: column
+                                margin: 1em 0
+                                >label 
+                                    color: #bababa
+                                    padding-bottom: .3em
+                                    font-size: responsive 15px 18px
+                                >input 
+                                    border: none
+                                    border-bottom: 1px solid  #bababa
+                                    background: rgba($negro,.1)
+                                    padding-left: .5em
+                                    line-height: 2
+                                    color: $blanco
+
+                                    &:focus
+                                        outline: none
+                                        border-bottom: 1px solid #089219
+                                
+
+                                >textarea
+                                    border: none
+                                    border: 1px solid  #bababa
+                                    background: rgba($negro,.1)
+                                    padding-left: .5em
+                                    line-height: 3
+                                    color: $blanco
+                                    height: 150px
+                                    max-height: 200px
+
+                                    &:focus
+                                        outline: none
+                                        border: 1px solid #089219
+
+
+
+                        .div__info__send
+                            text-align: center
+                            margin-top: 1em
+                            // padding: 1em 0
+                            @include mediaMin(768)  
+                                padding-top: 2em
+                            >button
+                                background: #089219
+                                padding: .3em 1em 
+                                width: 250px
+                                line-height: 2
+                                font-size: responsive 12px 17px
+                                text-transform: uppercase
+                                color: $blanco
+                                border: none
+                                border-radius: 20px
+                                outline: none
+
+
+        .social__media
+            position: relative
+            text-align: center
+            margin: 1em 0
+            @include mediaMin(768)
+                padding-top: 6em
+            span 
+
+                color: $blanco
+                text-transform: uppercase
+                font-size: responsive 12px 17px
+                letter-spacing: 1px
+                >a 
+                    outline: none !important
+                    color: #089219
+
+
+
+.fp-controlArrow,
+.fp-prev,
+.fp-next
+    display: none
+

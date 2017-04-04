@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Ahcaballo
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+        //- link(href="https://fonts.googleapis.com/css?family=Oswald:200,300,400|Roboto:300,500|Lato:300,400,700" rel="stylesheet")
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro', rel='stylesheet')
+
+        link(rel="stylesheet", href="./css/style.css")
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+       
+        //- link(rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png")
+        //- link(rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png")
+        //- link(rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png")
+        //- link(rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png")
+        //- link(rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png")
+        //- link(rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png")
+        //- link(rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png")
+        //- link(rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png")
+        //- link(rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png")
+        //- link(rel="icon" type="image/png" sizes="192x192"  href="./images/android-icon-192x192.png")
+        //- link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+        //- link(rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png")
+        //- link(rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png")
+        //- link(rel="manifest" href="./images/manifest.json")
+
+        //- meta(name="msapplication-TileColor" content="#ffffff")
+        //- meta(name="msapplication-TileImage" content="/ms-icon-144x144.png")
+        //- meta(name="theme-color" content="#ffffff")
+
+        link(rel="stylesheet", href="./css/jquery.fullpage.min.css")
+        //- link(rel="stylesheet", href="./css/eskju.jquery.scrollflow.css")
+
+
+        //- <!-- start Mixpanel -->
+        //- <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" "); for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]); mixpanel.init("a58ecb640f440717099be8281c479bc5");</script><!-- end Mixpanel -->
+
+    body
+        nav
+            include ./includes/nav.pug
+        div(id="contenedor")
+            .section.section-1
+                .text-content
+                    h2 Feria Expo agrohuila 2017
+                    span 29 de abril al 1 de mayo
+
+            .section.section-2
+                    
+                .slide.slide-1
+                    h2 XIV FERIA DE EXPOSICIóN 
+                    span EQUINA GRADO “A” DE NEIVA
+
+                .slide.slide-2
+                    h2 III FERIA DE EXPOSICION BOVINA
+                    span  ASOCEBU BRAHMAN Y GRYL GRADO “B”
+                
+                .slide.slide-3
+                    h2 III ENCUENTRO SURCOLOMBIANO 
+                    span DE GANADERIAS DE ALTO ESTATUS SANITARIO
+                
+                .slide.slide-4
+                    h2 LV FERIA AGROINDUSTRIAL, ARTESANAL, 
+                    span  AGRICOLA Y ESPECIES MENORES Y CONCURSO CANINO
+
+            .section.section-3
+                .lugar__container 
+                    .lugar__info
+                        h2 Información 
+                        .item__location
+                            i.fa.fa-map-marker(aria-hidden='true')
+                            span Coliseo de ferias ceagrodex 
+                        .item__location
+                            i.fa.fa-map(aria-hidden='true')
+                            span Carrera 5 No. 81 sur 45 Kilometro 12 vía sur 
+
+
+
+                        .item__location
+                            i.fa.fa-map(aria-hidden='true')
+                            span ahcaballo cra 13 No 9 -11
+                        
+                        .item__location
+                            i.fa.fa-phone(aria-hidden='true')
+                            span (8) 712732 - 716684
+
+
+
+                    .lugar__maps 
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.946237331798!2d-75.29478270691142!3d2.831800237315454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6d77e0d637db%3A0x6e6ce2673dc9876b!2sCeagrodex+Del+HUILA!5e0!3m2!1ses!2sco!4v1490796057794', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+
+
+            .section.section-4
+
+                h2 invitan 
+
+                .invitan__logos
+                    .items__logos
+                        figure 
+                            img(src="./images/fedequinas.png", alt="logo")
+                        span fedequinas 
+                    
+                    .items__logos
+                        figure 
+                            img(src="./images/gobernacion.png", alt="logo")
+                        span gobernación del huila
+
+                    .items__logos
+                        figure 
+                            img(src="./images/alcaldia.png", alt="logo")
+                        span alcaldía de neiva                       
+                    
+                    .items__logos
+                        figure 
+                            img(src="./images/logoahcaballocolor.png", alt="logo")
+                        span ahcaballo 
+
+                    .items__logos
+                        figure 
+                            img(src="./images/logo_ceagrodex.png", alt="logo")
+                        span ceagrodex
+
+
+                    .items__logos
+                        figure 
+                            img(src="./images/expoagrohuila.png", alt="logo")
+                        span expo agrohuila
+
+                    .items__logos
+                        figure 
+                            img(src="./images/ganaderos.png", alt="logo")
+                        span cómite de ganaderos del huila
+
+
+
+
+            .section.section-5
+
+                .formulario
+                    .form__containers
+                        form
+                            .div__info__container
+                                .div__info__items
+                                    label Nombre Completo
+                                    input(type="text" placeholder="Juan Lizcano" autofocus required)#nombreCompleto
+                                
+                                .div__info__items 
+                                    label Correo Electronico
+                                    input(type="text" placeholder="Juan@Example.com" required)#email
+
+                                .div__info__items 
+                                    label Celular 
+                                    input(type="text" placeholder="(300)455 5555" maxlength="10" )#celular
+
+                                .div__info__items
+                                    label Mensaje
+                                    textarea(name="", cols="30", rows="10" placeholder="Your message...")#mensaje
+                            
+                            .div__info__send
+                                button#buttoncoursesSend enviar 
+           
+
+
+                .social__media
+                    span diseñado y desarrollado por <a href="http://bit.ly/2eLx9yd" target="_blank">mep's</a>
+
+
+
+        //- script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+        //- script(src="./js/eskju.jquery.scrollflow.min.js")
+        //- script(src="./js/jquery.fullPage.js")
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+        script(type='text/javascript', src='./js/menu.js')
+        script(type='text/javascript', src='./js/jquery.fullpage.min.js')
+        script(type='text/javascript', src='./js/jquery.easings.min.js')
+        script(type='text/javascript', src='./js/scrolloverflow.min.js')
+        
+
+        
+
+
+        //- script(type='text/javascript').
+        //-     mixpanel.track("Page loaded", {"Page Name": "Landing Page"});
+
+
+        script.
+            var c = window.matchMedia('(min-width: 768px)');
+            function mediaQ() {
+            if(c.matches){
+            $('#contenedor').fullpage({
+            navigation: true,
+            anchors: ['inicio','eventos', 'lugar', 'invita','contacto'],
+            menu: '#mymenu',
+            css3: true,
+            slidesNavigation: true,
+            scrollingSpeed: 1000,
+            autoScrolling: true,
+            });
+            
+            }else{
+
+            $('#contenedor').fullpage({
+            //- navigation: true,
+            anchors: ['inicio','eventos', 'lugar', 'invita','contacto'],
+            menu: '#mymenu',
+            css3: true,
+            slidesNavigation: true,
+            scrollingSpeed: 1000,
+            autoScrolling: false,
+            });
+            }
+            }         
+            mediaQ();
+            //- if(c){
+
+
+            //- }else {
+            //- $('#contenedor').fullpage({
+            //- //- navigation: true,
+            //- anchors: ['eventos', 'lugar', 'invita','contacto'],
+            //- menu: '#mymenu',
+            //- css3: true,
+            //- slidesNavigation: true,
+            //- scrollingSpeed: 1000,
+            //- autoScrolling: true,
+            //- fitToSection:false,
+            //- showActiveTooltip: true
+            //- });
+            //- }
+
